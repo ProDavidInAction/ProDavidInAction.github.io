@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>School Simplified</title>
+	<link href="./style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="Base.js"></script>	
+</head>
+
+<body>
+	<a href="#" class="text-decoration-none">
+	<div class="header">
+		<div class="inner_header">
+			<div class="logo_container">
+				<a href="./logedin.html"><h1>SCHOOL<span>SIMPLIFIED</span></h1></a>
+			</div>
+
+			<ul class="navigation">
+				<a onclick="NotLoggedInFault()"><li>News</li></a>
+				<a onclick="NotLoggedInFault()"><li>Revise</li></a>
+				<a onclick="NotLoggedInFault()"><li>Explanations</li></a>
+				<a onclick="NotLoggedInFault()"><li>Tips</li></a>
+				<a onclick="NotLoggedInFault()"><li>Games</li></a>
+				<a onclick="NotLoggedInFault()"><li>AboutUs</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="login_container">
+		<form class="login_envelope" onsubmit="check_field()">
+			<center>
+				<div class="space">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+				<table>
+					<tbody>
+					  <tr>
+					    <th>
+					    	<div class="Log_in_parameters" align="center">
+								<p style="padding-bottom: 25px">Username</p>
+								<input type="text" id="username" required="">
+								<p style="padding-top: 25px; padding-bottom: 25px">Password</p>
+								<input type="password" id="password" required="">
+								<br>
+								<br>
+								<button onclick="login()" type="button" class="btn btn-success">Login</button>
+							</div>
+							<div class="Register" align="center">
+								<br>
+								<br>
+								<a href="./index.html" style="color: black"><li>Dont have an account? Register here!</li></a>
+							</div>
+						</th>
+					  </tr>
+					</tbody>
+				</table>
+			</center>
+		</form>
+
+	</div>
+
+</body>
+</html>
