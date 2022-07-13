@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>School Simplified</title>
+	<style>
+
+	form{
+		display: flex;
+		flex-direction: column;
+		width: 100%
+		margin:auto;
+	}
+	form input, form textarea, form button
+	{
+		padding: 20px;
+		margin-bottom: 20px;
+		outline: none;
+		border: none;
+		background-color: #ddd;
+
+	}
+	form button{
+		background-color: #333;
+		cursor: pointer;
+		color: #fff;
+	}
+	h1{
+		text-align: center;
+	}
+
+	</style>
+
+</head>
+
+<body>
+	<h1>Contact Us</h1>
+	<form class="contact_form"action="#">
+		<input class="name" type="text" placeholder="Name..." />
+		<input class="email" type="email" placeholder="Email..." />
+		<textarea class="msg" cols="5" rows="5" placeholder="Message"></textarea>
+		<button type="submit">Send</button>
+	</form>
+
+	<script src="https://smtpjs.com/v3/smtp.js">
+	</script>
+
+	<script>
+		const form = document.querrySelector(".contact_form");
+
+		function sendMsg(e)
+		{ 
+			e.preventDeafault();
+			const name=document.querrySelector(".name");
+				email=document.querrySelector(".email");
+				msg=document.querrySelector(".msg");
+
+			Email.send({
+			    SecureToken : "22668f6d-cf2e-4036-ad05-4ddbe30ee264",
+			    To : 'davidgonzalezsomosaguas@gmail.com',
+			    From : email.value,
+			    Subject : "Contact Form",
+			    Body : msg.value
+			}).then(
+			  message => alert(message)
+			);
+		}
+
+
+		form.addEventLisner("submit", sendMsg);
+
+	</script>>
+
+</body>
+</html>
