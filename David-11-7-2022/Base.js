@@ -59,4 +59,5 @@ function checkCookie() {
     }
   }
 }
+function setCookie(cname, 1, 20)
 
