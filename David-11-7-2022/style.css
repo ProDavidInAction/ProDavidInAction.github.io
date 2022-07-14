@@ -244,7 +244,7 @@ socials a i{
 	padding:  20px 0;
 	text-align: center;
 }
-footer_bottom p{
+.footer_bottom p{
 	font-size: 14px;
 	word-spacing: 2px;
 	text-transform: capitalize;
