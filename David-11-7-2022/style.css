@@ -1,16 +1,10 @@
-
 .Explanations{
 	background-image: url("https://wallpaperaccess.com/full/3457485.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
-.Home{
-	background-image: url("https://st.depositphotos.com/1605581/3032/i/450/depositphotos_30328185-stock-photo-abstract-blue-background-business-card.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
+
 
 .header{
 	width:  100%;
@@ -191,7 +185,7 @@
 	font-size: 140%;
 }
 
-.footer{
+footer{
 	background:  #111;
 	height:auto;
 	width:  100vw;
@@ -260,8 +254,3 @@
 .PhotoLink{
 	border-radius: 600%;
 }
-
-.explanations_table{
-	background-color: transparent;
-}
-
