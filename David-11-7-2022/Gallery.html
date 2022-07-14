@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>School Made Easy</title>
+	<link href="./style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="Base.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div = class="js">
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<a href="#" class="text-decoration-none">
+	<div class="header">
+		<div class="inner_header">
+			<div class="logo_container">
+				<a href="./logedin.html"><h1>SCHOOL<span>SIMPLIFIED</span></h1></a>
+			</div>
+
+			<ul class="navigation">
+				<a href="./news.html"><li>News</li></a>
+				<a href="google.com"><li>Revise</li></a>
+				<a href="./Explanations.html"><li>Explanations</li></a>
+				<a href="./tipsPage.html"><li>Tips</li></a>
+				<a href="google.com"><li>Games</li></a>
+				<a href="./testemail.html"><li>AboutUs</li></a>
+				<a href="./index.html"><li>SignOut</li></a>
+			</ul>
+		</div>
+	</div>
+    <h2>Automatic Slideshow</h2>
+    <p>Change image every 2 seconds:</p>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img_nature_wide.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img_snow_wide.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img_mountains_wide.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <h3><pre>                                Simplified School</pre></h3>
+            <p>When you boil it down, it really can be simple</p>
+            <ul class="socials">
+                <li><a  href="https://www.facebook.com/hbvhsajhfsa/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a  href="https://twitter.com/404/"><i class="fa fa-twitter"></i></a></li>
+                        <li><a  href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a  href="https://www.youtube.com/404/"><i class="fa fa-youtube"></i></a></li>
+                        <li><a  href="https://www.linkedin.com/404(/?_l=en_US"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <p>Copyright &copy;2022 OutputtingCode. Designed by <span>David González & Daniel Sánchez</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
