@@ -35,9 +35,6 @@
 .TimeOfthedayIMG{
 	border-radius: 15px;
 }
-.TimeOfthedayIMG{
-	transition: width 2s, height 2s, transform 2s;
- }
 .logo_container h1{
 	color: #4d4d4d;
 	height: 100%;
