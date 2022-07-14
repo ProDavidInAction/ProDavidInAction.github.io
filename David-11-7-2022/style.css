@@ -321,3 +321,8 @@ img {vertical-align: middle;}
 .header_g {
 	position: none;
 }
+
+.envelope_table image{
+	width: 100%;
+	height: 100%;
+}
