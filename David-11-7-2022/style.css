@@ -185,7 +185,7 @@
 	font-size: 140%;
 }
 
-.footer{
+footer{
 	background:  #111;
 	height:auto;
 	width:  100vw;
@@ -237,13 +237,13 @@
 }
 .footer_bottom{
 	background:  #000;
-	width:  100%;
+	width:  100vw;
 	padding:  20px 0;
 	text-align: center;
 }
 .footer_bottom p{
-	font-size: 200px;
-	word-spacing: 20px;
+	font-size: 14px;
+	word-spacing: 2px;
 	text-transform: capitalize;
 }
 .footer_bottom span{
