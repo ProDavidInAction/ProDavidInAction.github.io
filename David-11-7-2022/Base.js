@@ -3,18 +3,13 @@ function login()
 	var name = document.getElementById("username").value;
 	var password = document.getElementById("password").value;
 
-  let name = ["BonzyBuddy", "ProDavid"];
-  let password = ["Calvo", "123"];
+  var name_array = ["BonzyBuddy", "ProDavid"];
+  var password_array = ["Calvo", "123"];
 
 
-	if(name == "BonzyBuddy" && password == "Calvo")
+	if(name_array.indexOf(name) == password_array.indexOf(password))
 	{
 		window.location.href="./logedin.html";
-    if(window.location.href = "./logedin.html")
-    {
-      window.alert("This is your homepage, you are free to explore");
-      break;
-    }
 	}
 	else
 	{
