@@ -227,11 +227,11 @@ footer{
 .socials li{
 	margin:  0 10px;
 }
-socials a{
+.socials a{
 	text-decoration: none;
 	color:  #fff;
 }
-socials a i{
+.socials a i{
 	font-size: 1.1rem;
 	transition: color .4s ease;
 }
