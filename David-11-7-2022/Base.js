@@ -10,7 +10,6 @@ function login()
 	if(name_array.indexOf(name) == password_array.indexOf(password))
 	{
 		window.location.href="./logedin.html";
-		getTime();
 	}
 	else
 	{
@@ -28,6 +27,7 @@ function NotLoggedInFault()
 	window.alert("Log in or sign up before you can access this page");
 }
 
+getTime();
 
 function getTime()
 {
@@ -35,7 +35,8 @@ function getTime()
 	let hour = d.getUTCHours();
 	const m = new Date();
 	let minutes = m.getUTCMinutes();
-	document.getElementById("time").innerHTML = hour.concat(minutes);
+	document.getElementById("time").innerHTML = hour;
+	document.getElementById("min").innerHTML = minutes;
 	getTime();
 }
 
