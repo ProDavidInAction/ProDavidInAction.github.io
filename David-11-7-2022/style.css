@@ -1,6 +1,4 @@
-body{
-	background-color: #f5f5f5;
-}
+
 .Explanations{
 	background-image: url("https://wallpaperaccess.com/full/3457485.jpg");
 	background-repeat: no-repeat;
@@ -188,7 +186,7 @@ body{
 	font-size: 140%;
 }
 
-footer{
+.footer{
 	background:  #111;
 	height:auto;
 	width:  100vw;
