@@ -27,16 +27,30 @@ function NotLoggedInFault()
 	window.alert("Log in or sign up before you can access this page");
 }
 
-getTime();
-
 function getTime()
 {
 	const d = new Date();
-	let hour = d.getUTCHours();
+	let hour = d.getUTCHours() + 2;
 	const m = new Date();
 	let minutes = m.getUTCMinutes();
 	document.getElementById("time").innerHTML = hour;
 	document.getElementById("min").innerHTML = minutes;
-	getTime();
+	var time = document.getElementById("time").innerHTML.toString()
+	if(time > 6 && time < 11 || time == 11)
+	{
+		document.getElementById("wake_up_image").src="https://static.toiimg.com/photo/45773211.cms";
+	}
+	else if(time > 11 && time < 18 || time == 18)
+	{
+		document.getElementById("wake_up_image").src="https://media.gettyimages.com/videos/beautiful-summer-sun-time-lapse-video-id638668442?s=640x640";
+	}
+	else if(time > 18 && time < 20 || time == 20)
+	{
+		document.getElementById("wake_up_image").src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/blue-sky-above-the-setting-sun-lyle-crump.jpg";
+	}
+	else
+	{
+		document.getElementById("wake_up_image").src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGx1bmF8ZW58MHx8MHx8&w=1000&q=80";
+	}
 }
 
