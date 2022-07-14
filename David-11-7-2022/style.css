@@ -255,9 +255,6 @@
 	border-radius: 600%;
 }
 
-.explanations_table{
-	background-color: transparent;
-}
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
