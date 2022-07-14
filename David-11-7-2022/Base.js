@@ -35,6 +35,6 @@ function getTime()
 	let hour = d.getUTCHours();
 	const m = new Date();
 	let minutes = m.getUTCMinutes();
-	document.getElementById("time").innerHTML = hour.concat(":",minutes);
+	document.getElementById("time").innerHTML = hour.concat(minutes);
 }
 
