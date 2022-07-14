@@ -27,6 +27,8 @@ function NotLoggedInFault()
 	window.alert("Log in or sign up before you can access this page");
 }
 
+getTime();
+
 function getTime()
 {
 	const d = new Date();
