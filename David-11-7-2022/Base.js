@@ -29,7 +29,8 @@ function NotLoggedInFault()
 
 function getTime()
 {
-	
-	getTime();
+	const d = new Date();
+	let hour = d.getUTCHours();
+	document.getElementById("time").innerHTML = hour;
 }
 
