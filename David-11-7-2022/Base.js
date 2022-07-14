@@ -5,8 +5,11 @@ function login()
 	if(name == "BonzyBuddy" && password == "Calvo")
 	{
 		window.location.href="./logedin.html";
-    window.alert("Login Correct");
-		window.alert("This is your home page, you are free to explore");
+    if(window.location.href = "./logedin.html")
+    {
+      window.alert("This is your homepage, you are free to explore");
+      break;
+    }
 	}
 	else
 	{
