@@ -4,7 +4,7 @@ function login()
 	var password = document.getElementById("password").value;
 
   var name_array = ["BonzyBuddy", "ProDavid", "Profe", "DaSaPa", "David"];
-  var password_array = ["Calvo",  "123",      "Coding", "123",   "123"];
+  var password_array = ["Calvo", "123", "Coding", "123", "123"];
 
 
 		if(name_array.indexOf(name) == password_array.indexOf(password))
