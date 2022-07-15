@@ -56,5 +56,6 @@ function getTime()
 		document.getElementById("wake_up_image").src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGx1bmF8ZW58MHx8MHx8&w=1000&q=80";
 		document.getElementById("initial_statement").innerHTML = "You should be asleep!";
 	}
-	getTime();
 }
+
+setInterval(getTime, 1000);
