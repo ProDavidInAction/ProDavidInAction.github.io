@@ -59,12 +59,3 @@ function getTime()
 }
 
 setInterval(getTime, 1000);
-setRiddle();
-function setRiddle()
-{
-	var Riddles = ["What has to be broken before you can use it?", "I'm tall when I'm young, and I'm short when I'm old. What am I?"];
-	var Riddles_answer = ["An egg", "A candle"];
-	var randomRiddle = Riddles[Math.floor (Math.random() * Riddles.length)];
-	var riddle = Riddles[Math.floor(Math.random() * 3)]
-	document.getElementById("initial_riddle").innerHTML = riddle;
-}
