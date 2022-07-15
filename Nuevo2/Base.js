@@ -59,6 +59,7 @@ function getTime()
 }
 
 setInterval(getTime, 1000);
+setRiddle();
 function setRiddle()
 {
 	var Riddles = ["What has to be broken before you can use it?", "I'm tall when I'm young, and I'm short when I'm old. What am I?"];
