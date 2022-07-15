@@ -65,6 +65,5 @@ function setRiddle()
 	var Riddles = ["What has to be broken before you can use it?", "I'm tall when I'm young, and I'm short when I'm old. What am I?"];
 	var Riddles_answer = ["An egg", "A candle"];
 	var randomRiddle = Riddles[Math.floor (Math.random() * Riddles.length)];
-	document.getElementById("initial_riddle").innerHTML = Riddles[randomRiddle];
-	document.getElementById("riddle_answer").innerHTML = Riddles_answer[indexOf(randomRiddle)];
+	document.getElementById("initial_riddle").innerHTML = Riddles[Math.floor (Math.random() * Riddles.length)];
 }
