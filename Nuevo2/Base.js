@@ -7,7 +7,7 @@ function login()
   var password_array = ["Calvo",  "123",      "Coding", "123",   "123"];
 
 
-	if(name_array.indexOf(name) == password_array.indexOf(password))
+		if(name_array.indexOf(name) == password_array.indexOf(password))
 	{
 		window.location.href="./logedin.html";
 	}
@@ -56,4 +56,5 @@ function getTime()
 		document.getElementById("wake_up_image").src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGx1bmF8ZW58MHx8MHx8&w=1000&q=80";
 		document.getElementById("initial_statement").innerHTML = "You should be asleep!";
 	}
+	getTime();
 }
